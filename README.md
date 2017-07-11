@@ -33,15 +33,15 @@ rendered via HTML.  There are a few ways you could do it, e.g., a table that
 looks like:
 
 ```html
-<table class="racer_table">
-  <tr id="player1_strip">
+<table class="racer-table">
+  <tr id="player1-strip">
     <td></td>
     <td class="active"></td>
     <td></td>
     <td></td>
     ... etc ...
   </tr>
-  <tr id="player2_strip">
+  <tr id="player2-strip">
     <td></td>
     <td></td>
     <td></td>
@@ -54,13 +54,13 @@ looks like:
 Then, using CSS, you can provide styles like:
 
 ```css
-.racer_table td {
+.racer-table td {
   background-color: white;
   height: 20px;
   width: 20px;
 }
 
-.racer_table td.active {
+.racer-table td.active {
   background-color: black;
 }
 ```
@@ -85,7 +85,7 @@ reflect the new position.
 It could look something like:
 
 ```javascript
-update_player_position('player1', 10);
+updatePlayerPosition('player1', 10);
 ```
 
 Store this JavaScript in a separate file and use the JavaScript console to
